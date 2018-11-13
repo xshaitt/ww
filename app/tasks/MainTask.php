@@ -12,16 +12,16 @@ class MainTask extends Task
 {
     public function mainAction()
     {
-        echo 'This is the default task and the default action' . PHP_EOL;
+        echo '默认task' . PHP_EOL;
     }
 
     public function testAction(array $params)
     {
-        echo sprintf('hello %s', $params[0]);
+        echo sprintf('参数1： %s', $params[0]);
 
         echo PHP_EOL;
 
-        echo sprintf('best regards, %s', $params[1]);
+        echo sprintf('参数2 %s', $params[1]);
 
         echo PHP_EOL;
     }
